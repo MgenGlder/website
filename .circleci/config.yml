@@ -8,10 +8,11 @@ jobs:
       - image: circleci/ruby:2.6.3-stretch-node
     executor: ruby/default
     steps:
-      - checkout
+      - checkout      
+      - ruby/bundle-install
       - run:
-          name: Install Bundler!
-          command: gem install bundler
+          name: Update bundler
+          command: bundle update
       - run:
           name: Which bundler?
           command: bundle -v
