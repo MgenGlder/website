@@ -1,11 +1,13 @@
 <template>
-  <h1>Jekyll-Vue Template</h1>
+  <div>
+    <h1>Jekyll-Vue Template</h1>inside the vue template...
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld'
-}
+  name: "HelloWorld"
+};
 </script>
 
 <style lang="scss" scoped>
