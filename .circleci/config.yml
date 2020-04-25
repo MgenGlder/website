@@ -15,7 +15,9 @@ jobs:
       - run:
           name: Which bundler?
           command: bundle -v
-      - ruby/bundle-install
+      - run:
+          name: Install Jekyll!
+          command: gem install jekyll
       - run:
           name: install-dependencies
           command: npm install
@@ -24,5 +26,5 @@ jobs:
           command: npm run build
       - run:
           name: Bundle Site (The Jekyll Way)
-          command: bundle exec
+          command: jekyll build
 
