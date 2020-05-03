@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">jekyll-vue-template</h1>
-
+> In order to run: bundle exec jekyll serve --watch
 > A Jekyll project template that uses Vue.js single file components complete with webpack bundling and optimizations.
 
 ## Overview
