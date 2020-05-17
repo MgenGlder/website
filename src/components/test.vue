@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Jekyll-Vue Template</h1>inside the vue template...
+      Testing routing with Vue.
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: 'Testing'
 };
 </script>
 

@@ -1,9 +1,10 @@
 import Vue from 'vue'
-import HelloWorld from './components/HelloWorld'
+import App from './components/App'
+import router from './router'
 
-Vue.component('helloWorld', HelloWorld)
+Vue.component('App', App)
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app'
-})
+new Vue(
+  { el: '#app', router }
+)

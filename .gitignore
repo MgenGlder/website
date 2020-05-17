@@ -6,6 +6,7 @@ _site
 .sass-cache
 .jekyll-metadata
 _includes/scripts.html
+.jekyll-cache
 
 # Windows thumbnail cache files
 Thumbs.db
