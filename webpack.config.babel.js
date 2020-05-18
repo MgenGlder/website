@@ -52,6 +52,10 @@ module.exports = {
           /node_modules/.test(file) &&
           !/\.vue\.js/.test(file)
         )
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader'
       }
     ]
   },
