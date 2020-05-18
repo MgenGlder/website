@@ -6,10 +6,10 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: './src/main.js',
-  build: {
-    assetsPublicPath: '/',
-    assetsSubDirectory: 'static'
-  },
+  // build: {
+  //   assetsPublicPath: '/',
+  //   assetsSubDirectory: 'static'
+  // },
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist',
