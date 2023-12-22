@@ -1,91 +1,68 @@
-<div align="center">
-  <img alt="Jekyll and Vue logos" src=".github/jekyll-vue.png" width="75%">
-</div>
+# kunle-website
 
-<h1 align="center">jekyll-vue-template</h1>
-> In order to run: bundle exec jekyll serve --watch
-> A Jekyll project template that uses Vue.js single file components complete with webpack bundling and optimizations.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Overview
+## Recommended IDE Setup
 
-jekyll-vue-template is an opinionated, but minimal boilerplate for creating statically generated sites with Jekyll and Vue.js. It supports Vue single file components and webpack optimizations including code-splitting and cache-control.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Features
+## Type Support for `.vue` Imports in TS
 
-- Support for Vue single file components
-- Vendor code-splitting with webpack 4
-- Cache control for bundled assets using webpack 4
-- Babel transpilation
-- Sass language support in Vue single file components
-- eslint with Vue style guide plugin
-- Hot-reloading via BrowserSync
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-## Installation
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-The easiest way to use the jekyll-vue-template is to clone or fork this repo, then customize it to suit your needs.
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-### Install npm Packages
+## Customize configuration
 
-```console
-npm i
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-### Install Ruby Gems
+### Compile and Hot-Reload for Development
 
-```console
-bundle
-```
-
-## Usage
-
-The `src` directory contains the Vue application and its components. Create single file components and mount them anywhere in your Jekyll pages, including layouts, markdown pages, or includes.
-
-### Development
-
-To run the jekyll-vue-template in a development environment, first compile assets with webpack:
-
-```console
+```sh
 npm run dev
 ```
 
-Alternatively you can use the `watch` command to watch for changes in your webpack-managed assets and automatically recompile.
+### Type-Check, Compile and Minify for Production
 
-```console
-npm run watch
-```
-
-After assets have been built, spool up a development server with Jekyll:
-
-```console
-bundle exec jekyll s
-```
-
-### Production
-
-To build for production, first compile webpack assets:
-
-```console
+```sh
 npm run build
 ```
 
-After assets have been built, generate the static files with Jekyll:
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```console
-bundle exec jekyll build
+```sh
+npm run test:unit
 ```
 
-## Technical
+### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
 
-jekyll-vue-template uses the following projects as critical workflow components:
+```sh
+npm run test:e2e:dev
+```
 
-- **Jekyll** `v4.0.0`
-- **Vue** `v2.6.10`
-- **webpack** `v4.39.3`
+This runs the end-to-end tests against the Vite development server.
+It is much faster than the production build.
 
-## License
+But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
 
-MIT &copy; [Christopher Murphy](https://github.com/splode)
+```sh
+npm run build
+npm run test:e2e
+```
 
-[Jekyll License Info](https://github.com/jekyll/jekyll/blob/master/LICENSE)
+### Lint with [ESLint](https://eslint.org/)
 
-[Vue.js License Info](https://github.com/vuejs/vue/blob/master/LICENSE)
+```sh
+npm run lint
+```
