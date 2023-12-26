@@ -8,6 +8,9 @@ _site
 _includes/scripts.html
 .jekyll-cache
 
+# TS build files
+tsconfig.*
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
