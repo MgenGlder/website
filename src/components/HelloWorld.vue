@@ -8,9 +8,9 @@ defineProps<{
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      Full time software engineer, part time learner.
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Guitar</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Dance</a>. What's next?
+      Full time software engineer and part time learner.
+      <a href="https://www.youtube.com/watch?v=hnYU72RiLU8/" target="_blank" rel="noopener">Guitar</a> +
+      <a href="https://www.youtube.com/watch?v=epWiSNsGPYc" target="_blank" rel="noopener">Dance</a>. What's next?
     </h3>
   </div>
 </template>
