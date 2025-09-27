@@ -78,6 +78,7 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
+    width: 600px;
   }
 
   .logo {
