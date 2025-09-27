@@ -1,11 +1,18 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Home from '../Home.vue'
+import TheWelcome from '../TheWelcome.vue'
 
-describe('Home', () => {
+describe('TheWelcome', () => {
   it('renders properly', () => {
-    const wrapper = mount(Home, { props: { msg: 'Hello Vitest' } })
-    expect(wrapper.text()).toContain('Hello Vitest')
+    const wrapper = mount(TheWelcome)
+    expect(wrapper.text()).toContain('Follow the link')
+  })
+})
+
+describe('HomeView', () => {
+  it('renders properly', () => {
+    const wrapper = mount(TheWelcome)
+    expect(wrapper.text()).toContain('Follow the link')
   })
 })
