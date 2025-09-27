@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import Home from './components/Home.vue'
+
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/profile-cropped3.jpg" width="125" height="125" />
-
     <div class="wrapper">
-      <Home msg="Kunle Oshiyoye" />
-
+      <h1 class="green">Kunle Oshiyoye</h1>
+      <h3>Full time software engineer, part time learner.</h3>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -29,6 +28,24 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+.green {
+    text-decoration: none;
+    color: #00bd7e;
+    transition: .4s;
+    padding: 3px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.6rem;
+    position: relative;
+    top: -10px;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 nav {

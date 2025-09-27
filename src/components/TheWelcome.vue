@@ -23,11 +23,9 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Full Stack Engineering™</template>
 
-    Builder many things across the stack, but these days focusing on backend and data engineering at GitHub.
+    Builder of many things across the stack, but these days focusing on backend and data engineering at GitHub.
 
     <br />
-
-    <!-- More instructions are available in <code>README.md</code>. -->
   </WelcomeItem>
 
   <WelcomeItem>
@@ -36,7 +34,7 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Hobbies</template>
 
-    Guitar and dance, links TBD.
+    Guitar, dance, and community organizing.
   </WelcomeItem>
 
   <WelcomeItem>
@@ -54,6 +52,6 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Social Media</template>
 
-    TBD
+    MgenGlder
   </WelcomeItem>
 </template>
